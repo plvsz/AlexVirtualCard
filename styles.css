@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2ecc71, #e67e22);
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 5px solid #2ecc71;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.8rem;
+    color: #2ecc71;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    margin: 1.5rem 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    color: #e67e22;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    color: #2ecc71;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    color: #e67e22;
+    background: rgba(46, 204, 113, 0.1);
+    transform: translateY(-3px);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #2ecc71, #e67e22);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.3);
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .contact-item {
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-links a {
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    .cta-button {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 1.3rem;
+    }
+
+    .title {
+        font-size: 0.9rem;
+    }
+
+    .contact-item {
+        font-size: 0.8rem;
+    }
+
+    .social-links {
+        gap: 0.8rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+        padding: 6px;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.8rem;
+    }
+} 
